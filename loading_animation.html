@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loading_animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container .circle{
+            border: 3px solid rgb(201, 196, 196);
+            /* top: 40px; */
+            /* left: 40px; */
+            width: 1px;
+            height: 3px;
+            border-radius: 50%;
+            /* border-radius: 160px; */
+            border-top: 80px solid rgb(142, 145, 142);
+            border-radius: 6px;
+            transition:1s 360;
+            animation:border-top 1s infinite;
+            border-top:ridge 20px ;
+        }
+        @keyframes border-top {
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="circle"></div>
+    </div>
+</body>
+</html>

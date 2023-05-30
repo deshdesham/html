@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>liner_gradient_text</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 3rem;
+            font-family: sans-serif;
+            font-weight: 600;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            display:grid;
+            place-items:center;
+            /* background: linear-gradient(45deg,red,blue,rgb(6, 221, 236),rgb(11, 218, 11),rgb(153, 6, 211)); */
+            transform: rotate(360deg);
+        }
+        .text{
+            background: linear-gradient(45deg,red,blue,rgb(6, 221, 236),rgb(11, 218, 11),rgb(153, 6, 211));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            
+        }
+        .text:hover{
+            transition: all 0.3s linear;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text">DESHAM</div>
+    </div>
+</body>
+</html>
